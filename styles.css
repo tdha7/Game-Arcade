@@ -1,0 +1,52 @@
+body {
+    font-family:'Cabin Sketch', cursive;
+    background: linear-gradient(to right, #83a4d4, #b6fbff);
+}
+
+header {
+    margin: 0;
+    background-color:rgb(192, 98, 247);
+}
+  
+h1 {
+    color: rgb(18, 1, 1);
+    font-size: 300%;
+    padding: 1%;
+    padding-bottom: 1%;
+    margin: 0;
+    text-align: center;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    font-size: 100%;
+    padding-top: 3%;
+  }
+
+.item {
+    text-align: center;
+}
+
+img {
+    max-width: 70%;
+    height: auto;
+}
+
+footer {
+    margin: 0;
+    background-color: rgb(138, 138, 204);
+    text-align: center;
+    color: white;
+    padding-bottom: 5px;
+}
+
+/* Media query for stacking images vertically on smaller screens */
+@media (orientation: portrait) {
+    .container {
+        grid-template-columns: auto; /* Change to a single column */
+    }
+    img {
+        max-width: 35%;
+    }
+  }

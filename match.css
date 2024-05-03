@@ -1,0 +1,148 @@
+body {
+    font-family:'Cabin Sketch', cursive;
+    background: linear-gradient(to right, #83a4d4, #b6fbff);
+}
+
+#game-container {
+    width: 80%;
+    height: 80%;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    background-color: rgb(235, 180, 195);
+    margin: auto;
+    font-size: 350%;
+}
+
+#simple-container {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    display: flex;
+}
+
+#grid-container {
+    display: grid;
+    box-sizing: border-box;
+    overflow: hidden; /* Hide overflow */
+    padding: 20px; /* Add padding */
+    justify-content: center;
+    align-items: center;
+}
+
+.diff-btn {
+    padding: 1%;
+    font-size: 50%;
+}
+
+.card {
+    background-color: #ddd;
+    text-align: center;
+    overflow: hidden; /* Hide overflow */
+    position: relative; /* Added for absolute positioning */
+    border: 1px solid black; /* Add border to cards */
+    box-sizing: border-box; /* Include border and padding in the calculation */
+}
+
+.card::before {
+    display: block;
+    padding-top: 100%; /* Creates a square shape based on width */
+}
+
+.card-text {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+.card.matched {
+    background-color: green;
+    color: white;
+}
+
+.card.flip {
+    background-color:orange;
+    color: black;
+}
+
+header {
+    margin: 0;
+    background-color:rgb(192, 98, 247);
+    font-family:'Cabin Sketch', cursive;
+}
+  
+h1 {
+    color: rgb(18, 1, 1);
+    font-size: 300%;
+    padding: 1%;
+    padding-bottom: 1%;
+    margin: 0;
+    text-align: center;
+}
+
+h2 {
+    color: rgb(229, 17, 17);
+    font-size: 200%;
+    padding: 1%;
+    padding-bottom: 1%;
+    margin: 0;
+    text-align: center;
+}
+
+#restart-container {
+    padding: 1%;
+    padding-bottom: 1%;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    gap: 10%;
+}
+
+#timer-container {
+    display: flex;
+    background-color: rgb(155, 160, 237);
+    padding: 0.5%;
+    font-size: 180%;
+    text-align: center;
+    align-items: center;
+}
+
+#timer {
+    background-color: rgb(226, 223, 234);
+    padding: 1%;
+}
+
+img {
+    max-width: 100%; /* Set the maximum width of the image to 100% of the container width */
+    max-height: 100%; /* Set the maximum height of the image to 100% of the container height */
+    display: block; /* Prevent inline images from affecting vertical alignment */
+    margin: auto; /* Center the image horizontally within the container */
+}
+
+footer {
+    margin: 0;
+    background-color: rgb(138, 138, 204);
+    text-align: center;
+    color: white;
+    padding-bottom: 5px;
+}
+
+@media (orientation: portrait) {
+    /* Add your CSS rules for screens under 1000px width here */
+    /* For example: */
+    .card {
+        width: 16vw;
+        height: 16vw;
+    }
+    #restart-container {
+        padding: 3vh;
+        padding-bottom: 5vh;
+    }
+}
+

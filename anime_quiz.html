@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=Cabin Sketch' rel='stylesheet'>
+    <link rel="stylesheet" href="anime_quiz.css">
+    <title>Anime Quiz</title>
+</head>
+<body>
+    <header>
+        <a href="index.html">
+            <h1> Anime Arcade: Anime Quiz </h1>
+        </a>
+    </header>
+    <div id="start-container"> 
+        <p>Guess the anime based on the information provided:</p>
+        <div id="timer-container"> Time:&nbsp;  
+            <div id="timer">1:00</div>
+        </div>
+        <div id="score-container"> Score:&nbsp;
+            <div id="player-score">0</div>
+        </div>
+        <button id="startButton" onclick="startGame()">Start Game</button>
+        <button id="restartButton" onclick="restartGame()"> Restart </button> 
+    </div>
+    <p id="output"> </p>
+    <div id="anime-question-container"> 
+        <p id="rating"></p>
+        <p id="aired-date"></p>
+        <p id="genres"></p>
+        <img id="image" src="" alt="Anime Image">
+        <br><br>
+        <input type="text" id="guess" placeholder="Enter your guess">
+        <button onclick="checkGuess()" id="guessButton">Check Guess</button>
+        <button onclick="generateNewQuestion()" id ="nextButton">Skip</button>
+    </div>
+    <footer>
+        <p>
+          <br> &copy; An Anime Fan <br>
+        </p>
+    </footer>
+    <script src="anime_quiz.js"></script>
+</body>
+</html>

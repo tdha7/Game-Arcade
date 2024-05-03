@@ -1,0 +1,153 @@
+* {
+    color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+h2 {
+    color: rgb(229, 17, 17);
+    font-size: 150%;
+    margin: 0;
+    text-align: center;
+    font-family:'Cabin Sketch', cursive;
+}
+
+header {
+    margin: 0;
+    background-color:rgb(192, 98, 247);
+    font-family:'Cabin Sketch', cursive;
+}
+  
+h1 {
+    color: rgb(18, 1, 1);
+    font-size: 300%;
+    padding: 1%;
+    padding-bottom: 1%;
+    margin: 0;
+    text-align: center;
+    font-family:'Cabin Sketch', cursive;
+}
+
+body {
+    background: linear-gradient(to right, #83a4d4, #b6fbff);
+}
+
+.tile-container {
+    text-align: center;
+    width: 510px;
+    border-bottom: solid 1px #3a3a3c;
+}
+
+.game-container {
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.tile-container {
+    width: 330px;
+    margin-bottom: 0px;
+}
+
+.key-container {
+    width: 510px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.key-container button {
+    width: 43px;
+    height: 43px;
+    border-radius: 4px;
+    border: none;
+    background-color: #818384;
+    margin: 4px;
+    color: white;
+}
+
+.key-container button:nth-child(27),
+.key-container button:nth-child(28) {
+    width: 68px;
+}
+
+.key-container button:nth-child(11) {
+    margin-left: 30px;
+}
+
+.tile-container div {
+    display: flex;
+}
+
+.tile-container .tile {
+    width: 62px;
+    height: 62px;
+    border: 2px solid #3a3a3c;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2px;
+    background-color: #bd99d8;
+}
+
+.message-container {
+    height: 30px;
+}
+
+.message-container p {
+    background-color: #818384;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 0;
+}
+
+.grey-overlay {
+    background-color: #3a3a3c !important;
+    border: none !important;
+}
+
+.yellow-overlay {
+    background-color: #b59f3a !important;
+    border: none !important;
+}
+
+.green-overlay {
+    background-color: #538d4e !important;
+    border: none !important;
+}
+
+footer {
+    margin: 0;
+    background-color: rgb(138, 138, 204);
+    text-align: center;
+    color: white;
+    padding-bottom: 5px;
+}
+
+/* Media Query */
+@media only screen and (max-width: 520px) {
+
+    .tile-container {
+        width: 80%;
+    }
+    .key-container {
+        width: 90%;
+    }
+
+    .key-container button {
+        width: 35px;
+        height: 40px;
+        font-size: 12px;
+    }
+
+    .key-container button:nth-child(27),
+    .key-container button:nth-child(28) {
+        width: 50px;
+    }
+
+    .key-container button:nth-child(11) {
+        margin-left: 5px;
+    }
+}
+

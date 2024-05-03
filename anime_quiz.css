@@ -1,0 +1,89 @@
+body {
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    background: linear-gradient(to right, #83a4d4, #b6fbff);
+    font-size: 100%;
+}
+
+header {
+    margin: 0;
+    background-color:rgb(192, 98, 247);
+    font-family:'Cabin Sketch', cursive;
+}
+  
+h1 {
+    color: rgb(18, 1, 1);
+    font-size: 300%;
+    padding: 1%;
+    padding-bottom: 1%;
+    margin: 0;
+    text-align: center;
+}
+
+#anime-question-container {
+    display: none; 
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    height: 100%;
+}
+
+#timer-container, #score-container {
+    display: flex;
+    background-color: rgb(155, 160, 237);
+    padding: 0.5%;
+    font-size: 180%;
+    text-align: center;
+    align-items: center;
+    font-family:'Cabin Sketch', cursive;
+}
+
+#output {
+    font-family:'Cabin Sketch', cursive;
+    font-size: 110%;
+}
+#timer, #player-score {
+    background-color: rgb(226, 223, 234);
+    padding: 1%;
+}
+
+img {
+    display: none;
+}
+
+#restartButton, #startButton {
+    padding: 1%;
+    display: none
+}
+
+#start-container {
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    gap: 5%;
+    padding: 1%;
+}
+
+#restart-container {
+    padding-top: 1%;
+}
+
+footer {
+    margin: 0;
+    background-color: rgb(138, 138, 204);
+    text-align: center;
+    color: white;
+    padding-bottom: 5px;
+}
+
+@media (orientation: portrait) {
+    #start-container {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+}
