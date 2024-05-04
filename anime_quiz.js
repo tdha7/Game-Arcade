@@ -51,12 +51,13 @@ function checkGuess() {
     if (isCorrect) {
         document.getElementById('output').style.color = 'green';
         document.getElementById('output').textContent = `Correct! The answer is: ${randomAnime.name} (${randomAnime.japanese_name.replace(/\)/g, '\\$&')})`;
-        document.getElementById('nextButton').textContent = 'Next';
         document.getElementById('guessButton').disabled = true;
+        document.getElementById('nextButton').textContent = 'Next';
         updateScore();
     } else {
         document.getElementById('output').style.color = 'red';
         document.getElementById('guessButton').disabled = true;
+        document.getElementById('nextButton').textContent = 'Next';
         document.getElementById('output').textContent = `You are incorrect. The correct names are: ${randomAnime.name} (${randomAnime.japanese_name.replace(/\)/g, '\\$&')})`;
     }
 }
