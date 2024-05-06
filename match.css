@@ -40,6 +40,9 @@ body {
     background-color: #ddd;
     text-align: center;
     overflow: hidden; /* Hide overflow */
+    display: flex;
+    justify-content: center;
+    align-items: center;
     position: relative; /* Added for absolute positioning */
     border: 1px solid black; /* Add border to cards */
     box-sizing: border-box; /* Include border and padding in the calculation */
@@ -58,7 +61,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-  }
+}
 
 .card.matched {
     background-color: green;
