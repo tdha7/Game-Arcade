@@ -151,3 +151,28 @@ footer {
     }
 }
 
+/* IPhone 14 Pro max resolution */
+@media only screen and (max-width: 430px) {
+    .tile-container {
+        width: 80%;
+    }
+    .key-container {
+        width: 100%;
+        margin-left: 25px;
+    }
+    .key-container button {
+        width: 30px;
+        height: 32px;
+        font-size: 14px;
+    }
+    .key-container button:nth-child(19) {
+        margin-right: 50px;
+    }
+    .key-container button:nth-child(27),
+    .key-container button:nth-child(28) {
+        width: 57px;
+    }
+    .key-container button:nth-child(11) {
+        margin-left: 25px;
+    }
+}
