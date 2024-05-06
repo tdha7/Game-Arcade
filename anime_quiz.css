@@ -44,6 +44,7 @@ h1 {
     font-family:'Cabin Sketch', cursive;
     font-size: 110%;
 }
+
 #timer, #player-score {
     background-color: rgb(226, 223, 234);
     padding: 1%;
