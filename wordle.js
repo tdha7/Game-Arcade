@@ -108,6 +108,11 @@ const handleClick = (letter) => {
         return;
     }
     if (letter === 'ENTER'){ 
+        const guess = guessRows[currentRow].join('');
+        // user has to enter at least 5 letters / a word to be able to enter
+        if (guess.length != 5) {
+            return;
+        }
         checkRow();
         console.log('guessRows', guessRows);
         return;
